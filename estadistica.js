@@ -97,7 +97,7 @@ function procesarDatos() {
         }
         else{
             columnaAUsar = parseFloat(columna3[(ii-1)].value);
-            e.innerHTML = columnaAUsar + valorDeClase;
+            e.innerHTML = columnaAUsar;
         }
 
     });
@@ -108,7 +108,7 @@ function procesarDatos() {
     columna4.forEach((e) => {
         iiii +=1;
 
-        if(ii === 1){
+        if(iiii === 1){
             
             let primerValor =data[0];
             let segundoValor = primerValor +  (valorDeClase - 1);
