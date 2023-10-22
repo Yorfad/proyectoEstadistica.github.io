@@ -96,7 +96,7 @@ function procesarDatos() {
         }
         else{
             columnaAUsar = columna3[(ii-1)].value
-            e.innerHTML = ColumnaAUsar + valorDeClase;
+            e.innerHTML = columnaAUsar + valorDeClase;
         }
 
     });
