@@ -106,6 +106,7 @@ tr, th, td {
 p {
   margin: 12px;
   display: flex;
+  background-color: red;
 }
 
 #result {
