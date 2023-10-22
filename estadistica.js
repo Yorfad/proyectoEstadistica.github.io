@@ -97,7 +97,7 @@ function procesarDatos() {
         }
         else{
             columnaAUsar = parseFloat(columna3[(ii-1)].value);
-            e.innerHTML = columnaAUsar;
+            e.innerHTML = columna3[ii];
         }
 
     });
