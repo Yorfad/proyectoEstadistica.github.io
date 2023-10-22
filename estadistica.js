@@ -95,14 +95,7 @@ function procesarDatos() {
             e.innerHTML = (primerValor1 +  segundoValor1)/2;
         }
         else{
-            sumar1 += valorDeClase;
-            
-            primerValor1 = (data[0] - (valorDeClase - limitesRealesDeClase )) + sumar1;
-            
-            segundoValor1 = primerValor1 + valorDeClase;
-            console.log(valorDeClase - limitesRealesDeClase)
-            e.innerHTML =(primerValor1 +  segundoValor1)/2;
-
+            e.innerHTML = columna3[(ii-1)] + valorDeClase;
         }
 
     });
