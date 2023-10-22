@@ -96,7 +96,7 @@ function procesarDatos() {
             e.innerHTML = (primerValor1 +  segundoValor1)/2;
         }
         else{
-            columnaAUsar = columna3[(ii-1)].value
+            columnaAUsar = parseFloat(columna3[(ii-1)].value);
             e.innerHTML = columnaAUsar + valorDeClase;
         }
 
