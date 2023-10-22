@@ -38,6 +38,7 @@ function procesarDatos() {
     let sumar1 = 0;
     let iii = 0;
     let sumar2 = 0;
+    let iiii = 0;
 
     columna1.forEach((e) => {
         i +=1;
@@ -100,5 +101,51 @@ function procesarDatos() {
         }
 
     });
+    
+    
+    const columna4 =  document.querySelectorAll(".columna4")
+    
+    columna4.forEach((e) => {
+        iiii +=1;
+
+        if(ii === 1){
+            
+            let primerValor =data[0];
+            let segundoValor = primerValor +  (valorDeClase - 1);
+            e.innerHTML = sumValuesInRange(frequency, primerValor, segundoValor);
+            
+        }
+        else{
+            sumar += valorDeClase;
+            let primerValor = data[0] + sumar;
+            let segundoValor = (primerValor - 1) + valorDeClase;
+            e.innerHTML = sumValuesInRange(frequency, primerValor, segundoValor);
+        }
+
+    });
+    
+    function sumValuesInRange(jsonData, start, end) {
+    // Convierte el JSON en un objeto JavaScript
+    const data = JSON.parse(jsonData);
+
+    // Inicializa una variable para llevar la suma
+    let sum = 0;
+
+    // Itera sobre las claves del objeto
+    for (const key in data) {
+        // Convierte la clave en un número
+        const numKey = parseInt(key);
+
+        // Verifica si el número está dentro del rango
+        if (numKey >= start && numKey <= end) {
+            // Suma el valor correspondiente
+            sum += data[key];
+        }
+    }
+
+    // Devuelve la suma
+    return sum;
+}
+
 }
 
