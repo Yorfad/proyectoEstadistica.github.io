@@ -92,7 +92,7 @@ function procesarDatos() {
             primerValor1 = data[0] - (valorDeClase - limitesRealesDeClase );
             console.log(primerValor1)
             segundoValor1 = data[0] +  limitesRealesDeClase;
-            e.innerHTML = primerValor1 + "-" + segundoValor1;
+            e.innerHTML = (primerValor1 +  segundoValor1)/2;
         }
         else{
             sumar1 += valorDeClase;
@@ -101,7 +101,8 @@ function procesarDatos() {
             
             segundoValor1 = primerValor1 + valorDeClase;
             console.log(valorDeClase - limitesRealesDeClase)
-            e.innerHTML = primerValor1 + "-" + segundoValor1;
+            e.innerHTML =(primerValor1 +  segundoValor1)/2;
+
         }
 
     });
