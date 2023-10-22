@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Carrito de compras</title>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="sass/sassIndex.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"> 
+		<script src="estadistica.js"  defer></script>
+		<script src="https://kit.fontawesome.com/4bb22f668e.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>	
+
+		<header class="header">
+			<input type="checkbox" class="header__menuDesplegable" id="header__menuDesplegable" hidden>
+			<label for="header__menuDesplegable" class="iconoMenu" id="iconoMenu"><i class="fa fa-bars" ></i></label>
+			<img src="/logo2.png" class="header header--logo">
+			<nav class="menu" >
+			    <div class="menu__contenedorBotones">
+					<button onclick="location.href='index.html'" class="boton boton--menuDesplegable">Inicio</button>
+					<button onclick="location.href='proyectos.html'" class="boton boton--menuDesplegable">Proyectos</button>
+				</div>
+			</nav>
+		</header>
+
+		<section class="section section__description">
+			
+			<textarea name="" id="textArea" cols="50" rows="4"></textarea>
+			<button onclick="procesarDatos()">Procesar Datos</button>
+			<div id="result"></div>
+			
+		</section>
+
+		<table class="table" border="1">
+			<thead>
+				<tr>
+					<th>Clases</th>
+					<th>Limites Reales</th>
+					<th>MC</th>
+					<th>F</th>
+					<th>Fa</th>
+					<th>Fr</th>
+					<th>F%</th>
+					<th>F*x</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="columna1">Fila 1, Celda 1</td>
+					<td class="columna2">Fila 1, Celda 2</td>
+					<td class="columna3">Fila 1, Celda 3</td>
+					<td>Fila 1, Celda 4</td>
+					<td>Fila 1, Celda 5</td>
+					<td>Fila 1, Celda 6</td>
+					<td>Fila 1, Celda 7</td>
+					<td>Fila 1, Celda 7</td>
+				</tr>
+				<tr>
+					<td class="columna1">Fila 2, Celda 1</td>
+					<td class="columna2">Fila 2, Celda 2</td>
+					<td class="columna3">Fila 2, Celda 3</td>
+					<td>Fila 2, Celda 4</td>
+					<td>Fila 2, Celda 5</td>
+					<td>Fila 2, Celda 6</td>
+					<td>Fila 2, Celda 7</td>
+					<td>Fila 1, Celda 7</td>
+				</tr>
+				<tr>
+					<td class="columna1">Fila 3, Celda 1</td>
+					<td class="columna2">Fila 3, Celda 2</td>
+					<td class="columna3">Fila 3, Celda 3</td>
+					<td>Fila 3, Celda 4</td>
+					<td>Fila 3, Celda 5</td>
+					<td>Fila 3, Celda 6</td>
+					<td>Fila 3, Celda 7</td>
+					<td>Fila 1, Celda 7</td>
+				</tr>
+				<tr>
+					<td class="columna1">Fila 4, Celda 1</td>
+					<td class="columna2">Fila 4, Celda 2</td>
+					<td class="columna3">Fila 4, Celda 3</td>
+					<td>Fila 4, Celda 4</td>
+					<td>Fila 4, Celda 5</td>
+					<td>Fila 4, Celda 6</td>
+					<td>Fila 4, Celda 7</td>
+					<td>Fila 1, Celda 7</td>
+				</tr>
+				<tr>
+					<td class="columna1">Fila 5, Celda 1</td>
+					<td class="columna2">Fila 5, Celda 2</td>
+					<td class="columna3">Fila 5, Celda 3</td>
+					<td>Fila 5, Celda 4</td>
+					<td>Fila 5, Celda 5</td>
+					<td>Fila 5, Celda 6</td>
+					<td>Fila 5, Celda 7</td>
+					<td>Fila 1, Celda 7</td>
+				</tr>
+				<tr>
+					<td class="columna1">Fila 6, Celda 1</td>
+					<td class="columna2">Fila 6, Celda 2</td>
+					<td class="columna3">Fila 6, Celda 3</td>
+					<td>Fila 6, Celda 4</td>
+					<td>Fila 6, Celda 5</td>
+					<td>Fila 6, Celda 6</td>
+					<td>Fila 6, Celda 7</td>
+					<td>Fila 1, Celda 7</td>
+				</tr>
+				<tr>
+					<td>Fila 7, Celda 1</td>
+					<td>Fila 7, Celda 2</td>
+					<td>Fila 7, Celda 3</td>
+					<td>Fila 7, Celda 4</td>
+					<td>Fila 7, Celda 5</td>
+					<td>Fila 7, Celda 6</td>
+					<td>Fila 7, Celda 7</td>
+					<td>Fila 1, Celda 7</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+        
+	
+
+			
+
+		<footer class="footer"> 
+
+		</footer>
+	  
+		  
+
+	</body>
+</html>

@@ -1,0 +1,25 @@
+@use 'header';
+
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    
+
+}
+
+tr, th, td{
+    border: 2px solid #000;
+}
+p{
+    margin: 12px;
+    display: flex;
+}
+
+#result{
+    margin: 20px;
+}

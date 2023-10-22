@@ -1,0 +1,113 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  margin: 10px 5% 40px 5%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100px;
+}
+.header--logo {
+  height: 70px;
+  width: 60px;
+  margin: 15px;
+}
+
+.menu {
+  display: none;
+  width: 100%;
+}
+.menu__contenedorBotones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.iconoMenu {
+  display: flex;
+}
+
+.header__menuDesplegable:checked ~ .menu {
+  display: flex;
+}
+
+.expand {
+  height: 200px;
+}
+
+.fa {
+  font-size: 35px;
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  .fa {
+    font-size: 25px;
+  }
+}
+
+.boton {
+  background: #892CDC;
+  display: block;
+  padding: 15px 25px;
+  color: #FFF;
+  text-decoration: none;
+  margin: 13px;
+  line-height: 28px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.boton:hover {
+  background: #2C3E50;
+}
+.boton--menuDesplegable {
+  border: none;
+  background: #FFF;
+  color: #000;
+  height: 50px;
+  transition: all 1s ease-out;
+  width: 100%;
+}
+.boton--menuDesplegable:hover {
+  text-decoration: underline;
+  color: #892CDC;
+  transition: all 1s;
+  background: #FFF;
+}
+.boton--pequeño {
+  margin: auto;
+  padding: 10px 18px;
+}
+
+@media (max-width: 1000px) {
+  .iconoMenu {
+    display: flex;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+    align-items: center;
+  }
+}
+* {
+  margin: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: none;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+tr, th, td {
+  border: 2px solid #000;
+}
+
+p {
+  margin: 12px;
+  display: flex;
+}
+
+#result {
+  margin: 20px;
+}/*# sourceMappingURL=sassIndex.css.map */
