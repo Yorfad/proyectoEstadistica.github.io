@@ -96,8 +96,9 @@ function procesarDatos() {
             e.innerHTML = (primerValor1 +  segundoValor1)/2;
         }
         else{
-            columnaAUsar = parseFloat(columna3[(ii-1)].value);
-            e.innerHTML = columna3[ii].value;
+            variableDesechable = ii -1;
+            columnaAUsar = parseFloat(columna3[variableDesechable1].value);
+            e.innerHTML = columnaAUsar;
         }
 
     });
